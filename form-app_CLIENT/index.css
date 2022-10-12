@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background:#f5e7f5;
+}
+
+.header {
+  background: linear-gradient(270deg, #ab23ab, #eb45cb);
+}
+
+.hdg {
+  color: #efefef;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  padding: 20px 0px;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #ffffff;
+  background: #d4bcd4;
+  width: 50%;
+  margin: 20px auto 0px;
+  border-radius: 25px;
+}
+
+.formLabel {
+  font-weight: bold;
+  padding: 10px;
+  color: #7e0b7e;
+  font-size: 22px;
+}
+
+.inputBox {
+  line-height: 1.5rem;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #773d77;
+}
+
+.submitButton {
+  margin: 25px;
+  padding: 10px 50px;
+  border-radius: 15px;
+  background-color: #7e0b7e;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  transition-duration: 200ms;
+}
+
+.submitButton:hover {
+  box-shadow: 0px 2px 3px black;
+  transform: translateY(-1px);
+  transition-duration: 200ms;
+  background-color: #a31ea3;
+}
+
+#video-main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cfb0cf;
+  padding: 35px;
+  height: 100vh;
+}
+
+#video-frame {
+  margin: 0 auto;
+  border: 10px solid #eb45cb;
+}
+
+.sub-hdg {
+  font-weight: bold;
+  color: #7e0b7e;
+  font-size: 36px;
+  text-align: center;
+  padding: 5px;
+}
+
+.content {
+  color: #7e0b7e;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+#oops-main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5e7f5;
+  padding: 35px;
+  height: 100vh;
+}
+
+#nav-div {
+   margin: 25px;
+  padding: 10px 50px;
+  border-radius: 15px;
+  background-color: #7e0b7e;
+  font-size: 30px;
+  font-weight: 500;
+  border: none;
+  transition-duration: 200ms;
+}
+
+#nav-div:hover {
+   box-shadow: 0px 2px 3px black;
+  transform: translateY(-1px);
+  transition-duration: 200ms;
+  background-color: #a31ea3;
+}
+
+a {
+ color: #ffffff;
+ text-decoration: none;
+}
