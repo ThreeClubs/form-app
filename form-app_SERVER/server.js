@@ -4,8 +4,11 @@
 
 const express = require("express");
 const app = express();
+const cors = require('cors');
 
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true })); //like an HTML form submission
+app.use(express.json()) // parsing the body of HTTP req where it is in JSON form, into obj we can wrk w.
+app.use(cors())// Accepts HTTP req from spec. recipient (or everybody in this case (BLANK))
 
 // mock db
 
@@ -38,6 +41,7 @@ let pinkUsers = [
 // });
 
 // end point for login using FETCH
+// MISSION X RELEVANT
 
 app.post("/loginWithFetch", (req, res) => {
   for (let i = 0; i < pinkUsers.length; i++) {
