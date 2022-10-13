@@ -27,9 +27,9 @@ function sendLogin(e) {
           "http://127.0.0.1:5500/form-app_CLIENT/loggedin.html";
       }, 1000);
     } else if (res.status === 404) {
-      loginResultDiv.innerHTML =
-        '<span class="logMessage"  style="color: red">That email or password was BS. Try again...</span>';
       logCount = logCount - 1;
+      loginResultDiv.innerHTML = `<span class="logMessage"  style="color: red">That email or password was BS. You have ${logCount} attemps left...</span>`;
+
       if (logCount < 1) {
         setTimeout(() => {
           window.location.href =
